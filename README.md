@@ -8,6 +8,24 @@ The trained model is deployed as a **Flask web application**, allowing users to 
 
 ---
 
+## 🚀 Live Demo
+
+👉 https://nlp-twitter-sentiment-analysis.onrender.com/
+
+---
+
+## 📊 Dataset
+
+The dataset used in this project is sourced from Kaggle:
+
+👉 https://www.kaggle.com/datasets/bhavikjikadara/tweets-dataset/data
+
+* Contains large-scale tweet data
+* Used for binary sentiment classification (Positive / Negative)
+* Preprocessed and sampled for efficient training
+
+---
+
 ## 🚀 Features
 
 * 🔹 Text Cleaning (lowercasing, removing URLs, special characters)
@@ -121,7 +139,7 @@ nlp-twitter-sentiment-analysis/
 
 ```bash
 # Clone repository
-git clone https://github.com/DhuruvanShanker-9426/nlp-twitter-sentiment-analysis.git
+git clone https://github.com/your-username/nlp-twitter-sentiment-analysis.git
 
 # Navigate to project folder
 cd nlp-twitter-sentiment-analysis
@@ -143,7 +161,9 @@ http://127.0.0.1:5000/
 
 ## 🌐 Deployment
 
-This project is deployed using **Render**, enabling real-time sentiment prediction through a web interface.
+This project is deployed on **Render**, enabling real-time sentiment prediction via a web interface.
+
+👉 Live App: https://nlp-twitter-sentiment-analysis.onrender.com/
 
 ---
 
