@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tweet Sentiment Analysis</title>
+
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+
+    <div class="container">
+        <div class="card">
+
+            <div class="header">
+                <h1>Tweet Sentiment Analysis</h1>
+                <p>Enter a tweet and predict whether the sentiment is Positive or Negative.</p>
+            </div>
+
+            <form action="/predict" method="POST">
+                <div class="form-group">
+                    <label for="tweet">Enter Tweet</label>
+                    <textarea 
+                        name="tweet" 
+                        id="tweet" 
+                        placeholder="Type your tweet here..."
+                        required>{{ tweet if tweet else "" }}</textarea>
+                </div>
+
+                <button type="submit">Analyze Sentiment</button>
+            </form>
+
+            {% if result %}
+            <div class="result-box">
+                <h2>Prediction Result</h2>
+
+                <p class="sentiment 
+                    {% if result == 'Positive' %}
+                        positive
+                    {% elif result == 'Negative' %}
+                        negative
+                    {% endif %}
+                ">
+                    {{ result }}
+                </p>
+
+                {% if tweet %}
+                <div class="tweet-box">
+                    <h3>Input Tweet</h3>
+                    <p>{{ tweet }}</p>
+                </div>
+                {% endif %}
+            </div>
+            {% endif %}
+
+        </div>
+    </div>
+
+</body>
+</html>
