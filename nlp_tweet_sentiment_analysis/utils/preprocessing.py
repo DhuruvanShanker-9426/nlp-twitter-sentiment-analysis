@@ -1,4 +1,5 @@
 import re
+import nltk
 
 def cleaning(sentence):
     text = sentence.lower()
@@ -10,6 +11,14 @@ def cleaning(sentence):
 from nltk import pos_tag
 from nltk.stem import WordNetLemmatizer
 from nltk.corpus import stopwords
+
+nltk.download("stopwords")
+nltk.download("wordnet")
+nltk.download("averaged_perceptron_tagger")
+nltk.download("averaged_perceptron_tagger_eng")
+nltk.download("omw-1.4")
+nltk.download("punkt")
+nltk.download("punkt_tab")
 
 lem=WordNetLemmatizer()
 stop_words=set(stopwords.words('english'))
