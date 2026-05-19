@@ -203,8 +203,8 @@ DEBUG=False
 
 **Dhuruvan Shanker R**
 
-* Aspiring Data Scientist / ML Engineer
-* Interested in NLP, AI/ML, and Data Analytics
+* Aspiring Data Scientist / ML Engineer.
+* Interested in NLP, AI/ML, and Data Analytics.
 
 ---
 
