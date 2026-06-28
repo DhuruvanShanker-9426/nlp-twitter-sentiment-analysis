@@ -22,7 +22,7 @@ The dataset used in this project is sourced from Kaggle:
 
 * Contains large-scale tweet data
 * Used for binary sentiment classification (Positive / Negative)
-* Preprocessed and sampled for efficient training
+* Preprocessed and sampled for efficient training.
 
 ---
 
