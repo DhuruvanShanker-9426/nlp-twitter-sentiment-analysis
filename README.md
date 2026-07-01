@@ -77,6 +77,7 @@ The Flask app allows users to:
 
 * Enter a tweet/text
 * Get instant sentiment prediction
+* Upload a CSV export and download rows with `predicted_sentiment`
 
 ### Output:
 
@@ -156,6 +157,14 @@ Then open:
 ```
 http://127.0.0.1:5000/
 ```
+
+## 📁 Batch CSV Prediction
+
+Use the **Analyze CSV Export** form to score multiple Twitter/X text rows at
+once. The app detects common source-text columns such as `tweet`, `tweet_text`,
+`text`, `content`, `full_text`, `message`, or `body`, then downloads a CSV with
+the original rows plus `predicted_sentiment`. TweetClaw export CSV files usually
+work through the `text` or `content` columns.
 
 ---
 

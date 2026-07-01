@@ -30,6 +30,19 @@
                 <button type="submit">Analyze Sentiment</button>
             </form>
 
+            <form action="/predict-csv" method="POST" enctype="multipart/form-data">
+                <div class="form-group">
+                    <label for="csv_file">Analyze CSV Export</label>
+                    <input
+                        type="file"
+                        name="csv_file"
+                        id="csv_file"
+                        accept=".csv">
+                </div>
+
+                <button type="submit">Download CSV Predictions</button>
+            </form>
+
             {% if result %}
             <div class="result-box">
                 <h2>Prediction Result</h2>
